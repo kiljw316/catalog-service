@@ -20,8 +20,8 @@ public class InMemoryBookRepository implements BookRepository {
     @Override
     public Optional<Book> findByIsbn(String isbn) {
         return existsByIsbn(isbn)
-                ? Optional.of(books.get(isbn))
-                : Optional.empty();
+            ? Optional.of(books.get(isbn))
+            : Optional.empty();
     }
 
     @Override
